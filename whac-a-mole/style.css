@@ -1,0 +1,84 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Press Start 2P', monospace;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(135deg, #282c34, #090a0f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;   
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Scoreboard */
+.scoreboard {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+}
+
+.scoreboard div {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+#score, #time-left {
+  color: #ffcc00;
+  font-weight: 900;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+/* Game Grid */
+.grid {
+  width: 620px;
+  height: 620px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+/* Squares */
+.square {
+  background: #333;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.square:hover {
+  background-color: #444;
+}
+
+/* Mole styling */
+.mole {
+  background-color: #ffcc00;
+  box-shadow: 0 0 10px 3px #ffd700, 0 0 30px 8px #ffaa00;
+  animation: pop 0.3s ease;
+  border-radius: 50%;
+  margin: 15px;
+}
