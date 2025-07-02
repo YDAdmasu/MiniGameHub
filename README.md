@@ -7,7 +7,7 @@ Games Included
 - Breakout
 - Frogger
 - Whac-a-Mole
-- Memory Match
+- Memory 
 
 Folder Structure
 
