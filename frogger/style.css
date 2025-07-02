@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+    background-color: #1c1c1c;
     font-family: 'Press Start 2P', monospace;
     display: flex;
     justify-content: center;
@@ -80,6 +80,15 @@ button:hover {
 
 .starting-block {
     background-color: #0055ff;
+}
+/* Row 3 (divs 19–27): waterbg1 */
+.grid div:nth-child(n+19):nth-child(-n+27) {
+  background: url('images/waterbg1.png') center/cover no-repeat;
+}
+
+/* Row 4 (divs 28–36): waterbg */
+.grid div:nth-child(n+28):nth-child(-n+36) {
+  background: url('images/waterbg.png') center/cover no-repeat;
 }
 
 .l1, .l2, .l3 {
