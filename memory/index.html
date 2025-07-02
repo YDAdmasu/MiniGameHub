@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h2>Score: <span id="result">0</span></h2>
+    <h2>Time Left: <span id="timer">60s</span></h2>
+    <p id="message" style="transition: opacity 0.5s; color: #0ff;"></p>
+    <div id="grid"></div>
+
+    <script src="app.js"></script>    
 </body>
 </html>
