@@ -138,20 +138,20 @@ function lose() {
         squares[currentIndex].classList.contains('l5') ||
         currentTime <= 0
     ) {
-        resultDisplay.textContent = 'You lose!'
         clearInterval(timerId)
         clearInterval(outcomeTimerId)
         squares[currentIndex].classList.remove('frog')
         document.removeEventListener('keyup', moveFrog)
+        showPopup("😢 You Lose!");
     }
 }
 
 function win() {
     if (squares[currentIndex].classList.contains('ending-block')) {
-        resultDisplay.textContent = 'You Win!'
         clearInterval(timerId)
         clearInterval(outcomeTimerId)
         document.removeEventListener('keyup', moveFrog)
+        showPopup("🎉 You Win!");
     }
 }
 
@@ -168,3 +168,13 @@ startPauseButton.addEventListener('click', () => {
         document.addEventListener('keyup', moveFrog)
     }
 })
+function showPopup(message) {
+    const popup = document.getElementById('popup');
+    const popupMessage = document.getElementById('popup-message');
+    popupMessage.textContent = message;
+    popup.style.display = 'flex';
+}
+
+function closePopup() {
+    location.reload(); // or reset your game manually
+}
