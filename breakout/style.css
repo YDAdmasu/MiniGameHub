@@ -21,7 +21,7 @@ body {
 #score {
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color: #00ffd5;
     margin: 10px 0 16px 0;       /* Only bottom margin */
     padding: 8px 16px;
     background-color: #1f1f1f;
@@ -35,7 +35,7 @@ body {
     position: relative;
     width: 560px;
     height: 300px;
-    border: 3px solid #ffffff;
+    border: 3px solid  #00ffd5;
     background-color: #1a1a1a;
     border-radius: 8px;
     overflow: hidden;
@@ -47,9 +47,9 @@ body {
     position: absolute;
     width: 100px;
     height: 20px;
+    border: 1px solid  #00ffd5;
     background-color: #3498db;
     border-radius: 4px;
-    border: 1px solid #2980b9;
 }
 
 /* Paddle */
@@ -59,7 +59,7 @@ body {
     height: 20px;
     background-color: #9b59b6;
     border-radius: 6px;
-    border: 1px solid #8e44ad;
+    border: 1px solid  #00ffd5;
 }
 
 /* Ball */
@@ -68,6 +68,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #e74c3c;
-    border: 2px solid #c0392b;
+    background-color: #00ffd5;
+    border: 1px solid  #00ffd5;
 }

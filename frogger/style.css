@@ -8,7 +8,7 @@ body {
     font-family: 'Press Start 2P', monospace;
     
     /* Game-friendly gradient background */
-    background: aquamarine;
+    background-color: #121212;
 
     /* OR use a game-themed background image:
     background-image: url('images/forest-bg.jpg'); 
@@ -29,33 +29,36 @@ body {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;    /* Prevent overflow with padding */
 }
 
 
 
 h3 {
-    margin: 5px 0;
+    margin: 8px 0;
     font-weight: normal;
-    color: #333;
+    color: white;
 }
-
-
+#time-left{
+    font-weight: normal;
+    color: #00ffd5;
+}
+#result{
+    color: #00ffd5;
+}
 button {
     padding: 10px 20px;
     font-family: 'Press Start 2P', monospace; /* or your chosen font */
     padding: 10px 20px;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 12px;
     cursor: pointer;
     border: none;
-    background-color: #28a745; /* green game-like button */
-    color: white;
+    background-color: #00ffd5; /* green game-like button */
+    color: #121212;
     transition: background-color 0.3s ease;
-    margin: 5px;
-    margin-bottom: 5px;
-    margin-left: 125px;
+    margin-bottom: -520px;
+    margin-left: -280px;
 }
 
 

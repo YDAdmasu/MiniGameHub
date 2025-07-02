@@ -42,7 +42,7 @@ body {
 }
 
 #score, #time-left {
-  color: #ffcc00;
+  color: #00ffd5;
   font-weight: 900;
   font-size: 18px;
   margin-left: 8px;
@@ -76,9 +76,8 @@ body {
 
 /* Mole styling */
 .mole {
-  background-color: #ffcc00;
-  box-shadow: 0 0 10px 3px #ffd700, 0 0 30px 8px #ffaa00;
+  background-color: #00ffd5;
   animation: pop 0.3s ease;
-  border-radius: 50%;
+  border-radius: 45%;
   margin: 15px;
 }
