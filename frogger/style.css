@@ -1,0 +1,132 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    font-family: 'Press Start 2P', monospace;
+    
+    /* Game-friendly gradient background */
+    background: aquamarine;
+
+    /* OR use a game-themed background image:
+    background-image: url('images/forest-bg.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+}
+
+
+.game-container {
+    width: 405px;              /* Match grid width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Center content horizontally */
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;    /* Prevent overflow with padding */
+}
+
+
+
+h3 {
+    margin: 5px 0;
+    font-weight: normal;
+    color: #333;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', monospace; /* or your chosen font */
+    padding: 10px 20px;
+    font-size: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745; /* green game-like button */
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-left: 125px;
+}
+
+
+button:hover {
+    background-color: #218838;
+}
+
+
+.grid {
+    width: 405px;
+    height: 405px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
+
+
+.grid div {
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;;
+}
+
+
+.ending-block {
+    background-image: url('images/goal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.starting-block {
+    background-color: #4a90e2;
+}
+
+
+.l1, .l2, .l3 {
+    background-image: url('images/log.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.l4, .l5 {
+    background-image: url('images/water.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.c1 {
+    background-image: url('images/car.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.c2, .c3 {
+    background-color: #ccc;
+}
+
+
+.frog {
+    background-image: url('images/frog.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
