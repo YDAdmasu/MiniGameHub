@@ -14,24 +14,26 @@ let outcomeTimerId
 let currentTime = 20
 
 function moveFrog(e) {
-    squares[currentIndex].classList.remove('frog')
+    squares[currentIndex].classList.remove('frog');
 
-    switch(e.key) {
-        case 'ArrowLeft' :
-             if (currentIndex % width !== 0) currentIndex -= 1
-            break
-        case 'ArrowRight' :
-            if (currentIndex % width < width - 1) currentIndex += 1
-            break
-        case 'ArrowUp' :
-            if (currentIndex - width >=0 ) currentIndex -= width
-            break
-        case 'ArrowDown' :
-            if (currentIndex + width < width * width) currentIndex += width
-            break
+    switch (e.key) {
+        case 'ArrowLeft':
+            if (currentIndex % width !== 0) currentIndex -= 1;
+            break;
+        case 'ArrowRight':
+            if (currentIndex % width < width - 1) currentIndex += 1;
+            break;
+        case 'ArrowUp':
+            if (currentIndex - width >= 0) currentIndex -= width;
+            break;
+        case 'ArrowDown':
+            if (currentIndex + width < width * width) currentIndex += width;
+            break;
     }
-    squares[currentIndex].classList.add('frog')
+
+    squares[currentIndex].classList.add('frog');
 }
+
 
 function autoMoveElements() {
     currentTime--
@@ -142,7 +144,7 @@ function lose() {
         clearInterval(outcomeTimerId)
         squares[currentIndex].classList.remove('frog')
         document.removeEventListener('keyup', moveFrog)
-        showPopup("😢 You Lose!");
+        showPopup("You Lose!");
     }
 }
 
@@ -151,7 +153,7 @@ function win() {
         clearInterval(timerId)
         clearInterval(outcomeTimerId)
         document.removeEventListener('keyup', moveFrog)
-        showPopup("🎉 You Win!");
+        showPopup("You Win!");
     }
 }
 

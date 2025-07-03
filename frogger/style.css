@@ -1,9 +1,9 @@
-/* General Reset & Background */
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #1c1c1c;
+    background: #1c1c1c;
     font-family: 'Press Start 2P', monospace;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
     color: white;
 }
 
-/* Game Container */
+
 .game-container {
     background-color: #1c1c1c;
     padding: 30px;
@@ -24,7 +24,7 @@ body {
     gap: 16px;
 }
 
-/* Headings & Text */
+
 h3 {
     margin: 5px 0;
     color: #00ffd5;
@@ -37,7 +37,7 @@ h3 {
     font-size: 12px;
 }
 
-/* Game Grid */
+
 .grid {
     width: 405px;
     height: 405px;
@@ -48,13 +48,42 @@ h3 {
     position: relative;
 }
 
+
 .grid div {
     width: 45px;
     height: 45px;
     box-sizing: border-box;
+    background-color: #222;
+    position: relative;
 }
 
-/* Button */
+.l1, .l2, .l3 {
+  background: url('images/log.png') center/cover no-repeat;
+  z-index: 1;
+}
+
+.l4, .l5 {
+    background: url('images/waterbg2.png') center/cover no-repeat !important;
+}
+
+.ending-block {
+    background: url('images/goal.png') center/cover no-repeat;
+}
+.starting-block {
+    background-color: #0055ff;
+}
+.c1 {
+    background: url('images/car.png') center/cover no-repeat;
+}
+.c2, .c3 {
+    background-color: #888;
+}
+.frog {
+  background: url('images/frog.png') center/cover no-repeat;
+  position: relative;
+  z-index: 10;
+}
+
 button {
     font-family: 'Press Start 2P', monospace;
     font-size: 10px;
@@ -67,51 +96,10 @@ button {
     transition: all 0.3s ease;
     margin-top: 10px;
 }
-
 button:hover {
     background-color: #00c0a3;
     transform: scale(1.05);
 }
-
-/* Game Tiles */
-.ending-block {
-    background: url('images/goal.png') center/cover no-repeat;
-}
-
-.starting-block {
-    background-color: #0055ff;
-}
-/* Row 3 (divs 19–27): waterbg1 */
-.grid div:nth-child(n+19):nth-child(-n+27) {
-  background: url('images/waterbg1.png') center/cover no-repeat;
-}
-
-/* Row 4 (divs 28–36): waterbg */
-.grid div:nth-child(n+28):nth-child(-n+36) {
-  background: url('images/waterbg.png') center/cover no-repeat;
-}
-
-.l1, .l2, .l3 {
-    background: url('images/log.png') center/cover no-repeat;
-}
-
-.l4, .l5 {
-    background: url('images/water.png') center/cover no-repeat;
-}
-
-.c1 {
-    background: url('images/car.png') center/cover no-repeat;
-}
-
-.c2, .c3 {
-    background-color: #888;
-}
-
-.frog {
-    background: url('images/frog.png') center/cover no-repeat;
-}
-
-/* Popup Styling */
 .popup {
     position: fixed;
     top: 0;
@@ -124,21 +112,18 @@ button:hover {
     align-items: center;
     z-index: 999;
 }
-
 .popup-content {
     background-color: #111;
     padding: 30px 40px;
     border-radius: 12px;
     text-align: center;
-    color: white;
+    color: #ffcc00;
     animation: popIn 0.3s ease-out;
 }
-
 .popup-content h2 {
     font-size: 20px;
     margin-bottom: 20px;
 }
-
 .popup-content button {
     font-size: 12px;
     background-color: #00ffd5;
@@ -148,12 +133,11 @@ button:hover {
     border-radius: 8px;
     cursor: pointer;
 }
-
 .popup-content button:hover {
     background-color: #00c0a3;
 }
 
-/* Popup Animation */
+
 @keyframes popIn {
     from {
         transform: scale(0.8);

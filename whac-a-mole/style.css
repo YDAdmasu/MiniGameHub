@@ -1,4 +1,4 @@
-/* Reset and base */
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 
-/* Scoreboard */
+
 .scoreboard {
   width: 620px;
   display: flex;
@@ -35,20 +35,20 @@ body {
 }
 
 .scoreboard div {
-  color: #fff;
+  color: #00ffd5;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1.2px;
 }
 
 #score, #time-left {
-  color: #00ffd5;
+  color: #ffcc00;
   font-weight: 900;
   font-size: 18px;
   margin-left: 8px;
 }
 
-/* Game Grid */
+
 .grid {
   width: 620px;
   height: 620px;
@@ -60,7 +60,7 @@ body {
   padding: 15px;
 }
 
-/* Squares */
+
 .square {
   background: #333;
   border-radius: 15px;
@@ -69,12 +69,12 @@ body {
   position: relative;
 }
 
-/* Hover effect */
+
 .square:hover {
   background-color: #444;
 }
 
-/* Mole styling */
+
 .mole {
   background-color: #00ffd5;
   animation: pop 0.3s ease;
